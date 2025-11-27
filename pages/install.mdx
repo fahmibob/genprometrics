@@ -1,0 +1,89 @@
+---
+title: "Instalasi Lingkungan Bioinformatika"
+date: "2025-11-26"
+author: "Bioinformatics Course Team"
+---
+
+import { Callout } from "nextra/components";
+
+# Instalasi Lingkungan Bioinformatika
+
+Sebelum memulai materi pemrograman dan analisis data, pastikan Anda sudah menginstal seluruh tools berikut.  
+Panduan lengkap tersedia dari website resmi masing-masing tool.
+
+<Callout type="info" emoji="💻">
+  Jika mengalami kendala instalasi, Anda dapat bertanya saat sesi praktikum.
+</Callout>
+
+---
+
+## 1. **Python (Versi 3.x)**
+
+Python digunakan untuk analisis data, cheminformatics, dan pembuatan pipeline.
+
+👉 Panduan instalasi resmi:  
+https://www.python.org/downloads/
+
+<Callout type="info" emoji="ℹ️">
+  Pastikan mencentang opsi **"Add Python to PATH"** saat instalasi Windows.
+</Callout>
+
+---
+
+## 2. **Jupyter Notebook**
+
+Jupyter digunakan sebagai lingkungan praktikum untuk menjalankan kode Python secara interaktif.
+
+👉 Instalasi melalui panduan resmi Jupyter:  
+https://jupyter.org/install
+
+Alternatif (lebih mudah untuk pemula):  
+👉 Google Colab (tanpa instalasi):  
+https://colab.research.google.com/
+
+---
+
+## 3. **WSL (Windows Subsystem for Linux)**
+
+WSL memungkinkan Anda menjalankan Linux langsung di dalam Windows — sangat penting untuk bioinformatika modern.
+
+👉 Panduan instalasi resmi WSL oleh Microsoft:  
+https://learn.microsoft.com/windows/wsl/install
+
+Rekomendasi distribusi: **Ubuntu**
+
+<Callout type="warning" emoji="📝">
+  Setelah WSL terinstal, Anda akan diminta membuat username dan password Linux.
+</Callout>
+
+---
+
+## 4. **R dan RStudio**
+
+Digunakan untuk analisis statistik, genomik, dan paket bioinformatika seperti **DADA2**, **DESeq2**, dan **phyloseq**.
+
+👉 Unduh R (CRAN):  
+https://cran.r-project.org/
+
+👉 Unduh RStudio (Posit Desktop):  
+https://posit.co/download/rstudio-desktop/
+
+<Callout type="info" emoji="ℹ️">
+  **R harus diinstal sebelum RStudio**, jika tidak, RStudio tidak dapat dijalankan.
+</Callout>
+
+---
+
+## 5. **Git & GitHub**
+
+Git digunakan untuk version control dan kolaborasi.  
+GitHub digunakan untuk menyimpan repositori secara online dan bekerja dalam tim.
+
+### Instalasi Git
+👉 Unduh Git untuk Windows/macOS/Linux:  
+https://git-scm.com/downloads
+
+Setelah instalasi, cek versi:
+
+```bash
+git --version

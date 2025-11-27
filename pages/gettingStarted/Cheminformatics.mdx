@@ -1,0 +1,91 @@
+---
+title: "Cheminformatics dengan Jupyter"
+date: "2025-11-26"
+author: "Workshop Bioinformatika"
+---
+
+import { Callout } from "nextra/components";
+
+# 🔬 Cheminformatics dengan Jupyter Notebook
+
+Sesi ini memperkenalkan dasar-dasar cheminformatics dengan pendekatan berbasis Python menggunakan Jupyter Notebook. 
+Mahasiswa akan belajar bagaimana melakukan screening dan docking dengan python.
+
+---
+
+## ⚙️ Prasyarat
+
+Untuk mengikuti sesi ini, peserta memerlukan:
+
+- **Git** → untuk meng-clone repositori praktikum  
+- **Python 3.x** → untuk menjalankan kode cheminformatics  
+- **Jupyter Notebook** → untuk menjalankan notebook secara lokal  
+- **Google Colab** → alternatif tanpa instalasi (paling mudah)  
+- **RDKit** → library utama untuk manipulasi molekul  
+- Library Python umum: `pandas`, `numpy`, `matplotlib`
+
+<Callout type="info" emoji="💡">
+Jika menggunakan **Google Colab**, Anda tidak perlu menginstal apa pun—semua notebook dapat dijalankan langsung di browser.
+</Callout>
+
+---
+
+## 🎯 Tujuan Pembelajaran
+
+Repositori `1_Cheminformatics_with_Jupyter` dikembangkan sebagai media pembelajaran interaktif untuk praktik cheminformatics. Notebook ini dapat dijalankan melalui Google Colab maupun lokal (Jupyter).
+
+<Callout type="info" emoji="📦">
+Silakan clone repositori berikut:  
+👉 [`https://github.com/fahmibob/1_Cheminformatics_with_Jupyter`](https://github.com/fahmibob/1_Cheminformatics_with_Jupyter)
+</Callout>
+
+---
+
+## 📓 Alur Notebook
+
+Berikut struktur isi dan tujuan dari setiap notebook:
+
+### 1. `01_koleksiData.ipynb`  
+Mengimpor atau membangun kumpulan data senyawa dari file CSV, PubChem, atau input manual.
+
+### 2. `02_lipinskiRo5.ipynb`  
+Menghitung properti molekul dan mengevaluasi kelayakan senyawa berdasarkan **Lipinski's Rule of Five** untuk menentukan drug-likeness.
+
+### 3. `03_filteringStructure.ipynb`  
+Menerapkan penyaringan lanjutan berdasarkan sifat fisikokimia (seperti logP, PSA, berat molekul), serta deteksi struktur reaktif/PAINS.
+
+### 4. `04_virtualScreening.ipynb`  
+Mempersiapkan data molekul untuk proses **virtual screening**, termasuk konversi format dan visualisasi senyawa. Belum termasuk docking.
+
+---
+
+## 🛠 Tools dan Lingkungan Kerja
+
+- **Jupyter Notebook** / **Google Colab**  
+- **Python ≥3.7**  
+- **RDKit**  
+- Library pendukung: `pandas`, `numpy`, `matplotlib`, dll.
+
+---
+
+## 📚 Referensi Belajar Tambahan
+
+### 📘 Repositori dan Tutorial
+
+- [`PatWalters/practical_cheminformatics_tutorials`](https://github.com/PatWalters/practical_cheminformatics_tutorials)  
+  Tutorial praktis cheminformatics dengan **RDKit**, mencakup descriptor, clustering, dan QSAR modeling.
+
+- [`AngelRuizMoreno/Jupyter_Dock`](https://github.com/AngelRuizMoreno/Jupyter_Dock)  
+  Contoh pipeline **docking** molekul berbasis Jupyter.
+
+- [`enveda/plant-chemical-space`](https://github.com/enveda/plant-chemical-space)  
+  Pemetaan **chemical space** dari senyawa alam tumbuhan.  
+  ➤ Lihat juga publikasinya:  
+  [🧾 Mapping the plant chemical space](https://link.springer.com/article/10.1186/s13321-023-00778-w)
+
+### 📄 Publikasi Ilmiah Terkait
+
+- Kim, S. et al. (2023). *Jupyter and RDKit: teaching cheminformatics with interactive notebooks*. **Journal of Cheminformatics**, 15(1), 88.  
+  🔗 https://link.springer.com/article/10.1186/s13321-023-00778-w
+
+---
